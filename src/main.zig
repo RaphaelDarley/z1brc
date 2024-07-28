@@ -8,7 +8,7 @@ const StationInfo = struct {
 
     pub fn update(self: *StationInfo, temp: i16) void {
         self.min = @min(self.min, temp);
-        self.max = @max(self.min, temp);
+        self.max = @max(self.max, temp);
         self.num += 1;
         self.sum += temp;
     }
